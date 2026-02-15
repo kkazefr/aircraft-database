@@ -164,3 +164,17 @@ INSERT INTO Baggage (booking_id, weight, status, location) VALUES
 (9, 24.1, 'Delivered', 'London Arrival 2'),
 (10, 20.4, 'Checked', 'NY Terminal D');
 
+INSERT INTO Security_Logs (passenger_id, flight_id, screening_result, screening_time) VALUES
+(1, 1, 'Clear', '2025-06-01 07:00:00'),
+(2, 1, 'Flagged', '2025-06-01 07:10:00'),
+(3, 2, 'Clear', '2025-06-02 09:30:00'),
+(4, 2, 'Clear', '2025-06-02 09:40:00');
+
+-- Inserting sample immigration records
+INSERT INTO Immigration_Records (passenger_id, flight_id, passport_verified, customs_status, clearance_time) VALUES
+(1, 1, TRUE, 'Cleared', '2025-06-01 08:00:00'),
+(2, 1, FALSE, 'Held', '2025-06-01 08:05:00'),
+(3, 2, TRUE, 'Cleared', '2025-06-02 10:00:00'),
+(4, 2, TRUE, 'Cleared', '2025-06-02 10:05:00');
+
+
